@@ -13,6 +13,7 @@ def count_substring(string, sub_string):
         start += 1
         end += 1
     return counter
+
 if __name__ == '__main__':
     string = input("Enter the main string: ").strip()
     sub_string = input("Enter the substring: ").strip()
