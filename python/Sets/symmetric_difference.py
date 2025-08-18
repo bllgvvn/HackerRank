@@ -3,15 +3,11 @@
 
 M = int(input('Enter the number of elements in set M: '))
 m_list = input('Enter the elements of set M: ')
-m_list = m_list.split()
-m_list = map(int, m_list)
-m_set = set(m_list)
+m_set = set(map(int, m_list.split()))
 
 N = int(input('Enter the number of elements in set N: '))
 n_list = input('Enter the elements of set N: ')
-n_list = n_list.split()
-n_list = map(int, n_list)
-n_set = set(n_list)
+n_set = set(map(int, n_list.split()))
 
 first_half = m_set.difference(n_set)
 second_half = n_set.difference(m_set)
