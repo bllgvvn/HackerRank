@@ -2,5 +2,5 @@
 
 while read line;
 do
-    echo "${line}" | cut -d$'\t' -f 1-3
+    echo "${line}" | cut -f 1-3
 done
